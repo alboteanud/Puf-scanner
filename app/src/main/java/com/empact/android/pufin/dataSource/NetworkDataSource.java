@@ -40,13 +40,13 @@ public class NetworkDataSource {
     }
 
     public void registerPhoto(String photoPath) {
-        String url = BuildConfig.DEBUG ? Configuration.photoUrlRegisterTest : Configuration.photoUrlRegisterTest;
+        String url = BuildConfig.DEBUG ? Configuration.photoUrlRegisterTest : Configuration.photoUrlRegister;
         ResponseItem responseItem = new ResponseItem(ResponseItem.Type.REGISTRATION);
         uploadPhoto(photoPath, url, responseItem);
     }
 
     public void validatePhoto(String photoPath) {
-        String url = BuildConfig.DEBUG ? Configuration.photoUrlValidateTest : Configuration.photoUrlValidateTest;
+        String url = BuildConfig.DEBUG ? Configuration.photoUrlValidateTest : Configuration.photoUrlValidate;
         ResponseItem responseItem = new ResponseItem(ResponseItem.Type.VALIDATION);
         uploadPhoto(photoPath, url, responseItem);
     }
