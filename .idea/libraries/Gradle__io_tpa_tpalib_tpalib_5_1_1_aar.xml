@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: io.tpa.tpalib:tpalib:5.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9ffe7386a94e6b7f80c2c5dec7c3ab2/jetified-tpalib-5.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9ffe7386a94e6b7f80c2c5dec7c3ab2/jetified-tpalib-5.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9ffe7386a94e6b7f80c2c5dec7c3ab2/jetified-tpalib-5.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c85177eec77c48c8b9ea5b39d913f943/jetified-tpalib-5.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c85177eec77c48c8b9ea5b39d913f943/jetified-tpalib-5.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c85177eec77c48c8b9ea5b39d913f943/jetified-tpalib-5.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e764a881e6d97a08e4ce03db69ff2d1/jetified-tpalib-5.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e764a881e6d97a08e4ce03db69ff2d1/jetified-tpalib-5.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e764a881e6d97a08e4ce03db69ff2d1/jetified-tpalib-5.1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.tpa.tpalib/tpalib/5.1.1/87c55df1028604919bc0bb6754132b4e50d7496b/tpalib-5.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

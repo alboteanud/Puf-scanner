@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pufin</string>
+    <string name="title_photo_fragment">Pufin</string>
+    <string name="title_form_fragment">Form</string>
+
+    <string name="info_no_camera_app">No camera app was found on your device.</string>
+    <string name="info_error_creating_file">An error occurred while creating the photo file</string>
+    <string name="take_photo_button_label">Take photo</string>
+    <string name="validate_button_text">Validate</string>
+    <string name="register_button_text">Register</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="register_dialog_title">Registration result</string>
+    <string name="validation_dialog_title">Validation result</string>
+    <string name="matchingId">Matching ID:</string>
+
+
+</resources>

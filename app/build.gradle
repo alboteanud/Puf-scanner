@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+
+    defaultConfig {
+        applicationId 'com.empact.android.pufin'
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 3
+        versionName '1.3'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "configType"
+    productFlavors {
+        variantTest {
+//            buildConfigField("String", "tpa_uuid", "\"d785eee7-436a-4a80-b054-3129d8fa9f3e\"")
+            buildConfigField("String", "tpa_uuid", "\"20c82c39-ae42-4a6c-af34-cbc2048a6d28\"")
+            buildConfigField("boolean", "TPA_ENABLED", "true")
+
+            applicationIdSuffix '.test'
+            dimension "configType"
+        }
+
+        variantStore {
+//            buildConfigField("String", "error_report_to", "\"android@bridgeit.dk\"")
+            buildConfigField("String", "tpa_uuid", "\"\"")
+            buildConfigField("boolean", "TPA_ENABLED", "false")
+
+            dimension "configType"
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.fragment:fragment:1.3.5'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    //TPA
+    variantTestImplementation 'io.tpa.tpalib:tpalib:5.1.1'
+    implementation 'io.tpa.tpalib:tpalib:5.1.1'
+
+}
